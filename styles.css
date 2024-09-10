@@ -1,0 +1,121 @@
+body {
+    background-image: url('background.jpg'); /* Убедитесь, что у вас есть файл background.jpg в каталоге static */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 16px; 
+}
+
+.container {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8); /* Более насыщенный фон */
+    border-radius: 12px; 
+    margin: 50px auto;
+    width: 90%; /* Уменьшение ширины для мобильных устройств */
+    max-width: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Новый стиль для заголовка и контактной информации */
+.header-info {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для улучшения читаемости */
+    border-radius: 8px; /* Скругленные углы */
+    padding: 10px; /* Отступы для отделения текста от границ */
+    margin: 20px 0; /* Отступ сверху и снизу */
+}
+
+h1, h2, h3, p {
+    margin: 10px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Увеличенная тень для текста */
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background-color: #ff9900; /* Яркий оранжевый цвет */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: #e68a00; /* Затемнённый цвет при наведении */
+    color: #f3f3f3; /* Светлее при наведении */
+    transform: scale(1.05); /* Эффект увеличения при наведении */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон для таблицы */
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Полупрозрачные границы */
+    padding: 10px;
+    text-align: left;
+    color: white; /* Белый текст в ячейках */
+}
+
+th {
+    background-color: rgba(255, 153, 0, 0.9); /* Яркие заголовки */
+    color: black; /* Черный текст для заголовков */
+}
+
+/* Стили для header и footer */
+header, footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Белая полупрозрачная рамка */
+    border-radius: 8px; /* Скругление углов */
+    padding: 15px; /* Отступы внутри */
+    margin: 20px 0; /* Отступ сверху и снизу */
+}
+
+/* Медиа-запрос для адаптивного дизайна */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 20px auto;
+        width: 95%; /* Увеличение ширины на мобильных устройствах */
+    }
+
+    h1, h2, h3, p {
+        font-size: 14px; /* Уменьшение шрифтов для мобильных устройств */
+    }
+
+    .button {
+        padding: 10px 15px; /* Уменьшение отступов для кнопок на мобильных устройствах */
+        font-size: 14px; /* Уменьшение шрифта кнопки */
+    }
+
+    th, td {
+        padding: 8px; /* Уменьшение отступов в таблице на мобильных устройствах */
+    }
+
+    table {
+        width: 100%;
+        overflow-x: auto; /* Добавление горизонтальной прокрутки */
+        display: block; /* Позволяет получить прокрутку */
+    }
+
+    header, footer {
+        margin: 10px 0; /* Уменьшение отступа для заголовка и нижнего колонтитула */
+    }
+}
+
+/* Для планшетов (ширина от 601px до 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 80%; /* Уменьшаем ширину для планшетов */
+    }
+
+    h1, h2, h3, p {
+        font-size: 16px; /* Поддержание нормального размера текста для планшетов */
+    }
+}
